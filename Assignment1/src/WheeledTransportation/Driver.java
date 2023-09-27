@@ -1,4 +1,4 @@
-
+package WheeledTransportation;
 class WheeledTransportation{
 	
 		protected int numWheels;
