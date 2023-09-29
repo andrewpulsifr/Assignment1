@@ -1,3 +1,5 @@
+package Package2;
+import Package1.WheeledTransportation;
 
 class Train extends WheeledTransportation{
 	

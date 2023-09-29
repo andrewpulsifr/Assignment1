@@ -1,3 +1,5 @@
+package Package2;
+import Package3.Metro;
 
 public class Tram extends Metro{
 		

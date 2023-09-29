@@ -1,3 +1,5 @@
+package Package3;
+import Package2.Train;
 
 public class Metro extends Train{
 		
