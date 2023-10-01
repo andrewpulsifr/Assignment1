@@ -1,3 +1,10 @@
+// -----------------------------------------------------
+// Assignment 1
+// Part: 1
+// Written by: Andrew Pulsifer 40234525 & Eamon INPUT REST and copy to other classes
+// -----------------------------------------------------
+
+
 package Package1;
 
 
