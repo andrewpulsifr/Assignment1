@@ -40,4 +40,16 @@ public class Monowheel extends WheeledTransportation {
 		return "This wheeled transport — serial #"+serialNum+" has "+numWheels+" wheels, has"
 				+ "a maximum speed of"+ maxSpeed +". The max weight of this monowheel equals "+maxWeight;
 	}
+	public boolean equals(Object x) {
+		
+		if(x == null || x.getClass() != this.getClass()) {
+			return false;
+		}
+		Monowheel a = (Monowheel)x;
+		if(a.numWheels == this.numWheels && a.maxSpeed == this.maxSpeed && a.maxWeight == this.maxWeight ) {
+			return true;
+		}
+			return false;
+
+	}
 }

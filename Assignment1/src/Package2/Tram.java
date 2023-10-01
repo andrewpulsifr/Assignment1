@@ -42,6 +42,21 @@ public class Tram extends Metro{
 					+". It was created in the year "+yrCreated+" and has "+totalStops+" totals stops.";
 						
 		}
+		
+		public boolean equals(Object x) {
+			
+			if(x == null || x.getClass() != this.getClass()) {
+				return false;
+			}
+			Tram a = (Tram)x;
+			if(a.numWheels == this.numWheels && a.maxSpeed == this.maxSpeed && a.numVehicles == this.numVehicles  
+				&& a.startStation == this.startStation && a.destStation == this.destStation && a.yrCreated == this.yrCreated
+				&& a.totalStops == this.totalStops) {
+				return true;
+			}
+				return false;
+
+		}
 			
 
 

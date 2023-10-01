@@ -1,19 +1,19 @@
 package Package2;
 import Package1.WheeledTransportation;
 
-class Train extends WheeledTransportation{
+public class Train extends WheeledTransportation{
 	
 	protected int numVehicles;
 	protected String startStation;
 	protected  String destStation;
 	
-	Train(){
+	public Train(){
 		this.numWheels = 0;
 		this.startStation ="empty";
 		this.destStation= "empty";
 	}
 	
-	Train(int numWheels, double maxSpeed, int numVehicles, String startStation,String destStation){
+	public Train(int numWheels, double maxSpeed, int numVehicles, String startStation,String destStation){
 		super(numWheels,maxSpeed);
 		this.destStation= destStation;
 		this.startStation= startStation;
@@ -21,7 +21,7 @@ class Train extends WheeledTransportation{
 		
 	}
 		
-	Train(Train t1){
+	public Train(Train t1){
 		super(t1.numWheels,t1.maxSpeed);
 		this.numVehicles= t1.numVehicles;
 		this.destStation= t1.destStation;
@@ -59,6 +59,18 @@ class Train extends WheeledTransportation{
 				+ "a maximum speed of"+ maxSpeed+" km/hr. It has "+numVehicles+" vehicles and "
 						+ "its starting and destination stations are"+startStation+" and "+destStation;
 					
+	}
+	public boolean equals(Object x) {
+		
+		if(x == null || x.getClass() != this.getClass()) {
+			return false;
+		}
+		Train a = (Train)x;
+		if(a.numWheels == this.numWheels && a.maxSpeed == this.maxSpeed && a.numVehicles == this.numVehicles  && a.startStation == this.startStation && a.destStation == this.destStation ) {
+			return true;
+		}
+			return false;
+
 	}
 		
 		

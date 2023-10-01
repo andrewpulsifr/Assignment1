@@ -1,30 +1,29 @@
 package Package1;
 
 
-class WheeledTransportation{
+public class WheeledTransportation{
 	
 		protected int numWheels;
 		protected double maxSpeed;
 		private long serialNum;
 		static long SNctr =10000;
-		static long metroSNctr = 3000;
 		
 		
-		WheeledTransportation(){
+		public WheeledTransportation(){
 			this.numWheels = 0;
 			this.maxSpeed =0;
 			this.serialNum= SNctr;
 			SNctr++;
 		}
 		
-		WheeledTransportation(int numWheels, double maxSpeed){
+		public WheeledTransportation(int numWheels, double maxSpeed){
 			this.numWheels = numWheels;
 			this.maxSpeed= maxSpeed;
 			this.serialNum= SNctr;
 			SNctr++;
 		}
 		
-		WheeledTransportation(WheeledTransportation w1){
+		public WheeledTransportation(WheeledTransportation w1){
 			this.numWheels = w1.numWheels;
 			this.maxSpeed= w1.maxSpeed;
 			this.serialNum= SNctr;
@@ -53,6 +52,18 @@ class WheeledTransportation{
 		public String toString() {
 			return "This wheeled transport — serial #"+serialNum+" has "+numWheels+" wheels, has"
 					+ "a maximum speed of"+ maxSpeed+" km/hr.";
+		}
+		public boolean equals(Object x) {
+			
+			if(x == null || x.getClass() != this.getClass()) {
+				return false;
+			}
+			WheeledTransportation a = (WheeledTransportation)x;
+			if(a.numWheels == this.numWheels && a.maxSpeed == this.maxSpeed ) {
+				return true;
+			}
+				return false;
+
 		}
 			
 			
