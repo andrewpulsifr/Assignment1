@@ -29,8 +29,7 @@ public class WheeledTransportation{
 		public WheeledTransportation(){
 			this.numWheels = 0;
 			this.maxSpeed =0;
-			this.serialNum= SNctr;
-			SNctr++;
+			this.serialNum= SNctr++;
 		}
 		/**
 		 * Parameterized constructor creates a wheeled transport object with input values
@@ -43,8 +42,7 @@ public class WheeledTransportation{
 		public WheeledTransportation(int numWheels, double maxSpeed){
 			this.numWheels = numWheels;
 			this.maxSpeed= maxSpeed;
-			this.serialNum= SNctr;
-			SNctr++;
+			this.serialNum= SNctr++;
 		}
 		
 		/**
@@ -57,8 +55,7 @@ public class WheeledTransportation{
 		public WheeledTransportation(WheeledTransportation w1){
 			this.numWheels = w1.numWheels;
 			this.maxSpeed= w1.maxSpeed;
-			this.serialNum= SNctr;
-			SNctr++;
+			this.serialNum= SNctr++;
 		}
 		/**
 		 * Mutator method reseting number of wheels
@@ -125,6 +122,16 @@ public class WheeledTransportation{
 				return false;
 
 		}
+		/**
+		 * clone() override method used to invoke polymorphism when using
+		 * copy constructor 
+		 * 
+		 * @return	new WheeledTransportation(this)		Call to copy constructor 
+		 * */
+		public WheeledTransportation clone(){
+			return new WheeledTransportation(this);	// Create and return a new WheeledTransportation using the copy constructor
+		}
+
 			
 			
 }

@@ -1,4 +1,5 @@
 package Package2;
+import Package1.WheeledTransportation;
 import Package3.Metro;
 
 /**
@@ -11,7 +12,7 @@ public class Tram extends Metro{
 		
 		protected int totalStops;
 		private long serialNum;
-		static int tramSNctr=25000;
+		static int SNctr=25000;
 		
 		/**
 		 * Default constructor creates a Tram object with default values
@@ -20,8 +21,7 @@ public class Tram extends Metro{
 
 		Tram(){
 			this.totalStops=0;
-			this.serialNum= tramSNctr;
-			tramSNctr++;
+			this.serialNum= SNctr++;
 		}
 		
 		/**
@@ -39,8 +39,7 @@ public class Tram extends Metro{
 		Tram(int numWheels, double maxSpeed, int numVehicles, String startStation,String destStation, int yrCreated,int totalStops ){
 			super(numWheels,maxSpeed,numVehicles,startStation,destStation,yrCreated);
 			this.totalStops=totalStops;
-			this.serialNum= tramSNctr;
-			tramSNctr++;
+			this.serialNum= SNctr++;
 		}
 		/**
 		 * Copy constructor creates a MetTramro object inputs of another object
@@ -51,8 +50,7 @@ public class Tram extends Metro{
 		Tram(Tram t1){
 			super(t1.numWheels,t1.maxSpeed,t1.numVehicles,t1.startStation,t1.destStation,t1.yrCreated);
 			this.totalStops=t1.totalStops;
-			this.serialNum= tramSNctr;
-			tramSNctr++;
+			this.serialNum= SNctr++;
 		}
 		
 		/**
@@ -102,6 +100,15 @@ public class Tram extends Metro{
 			}
 				return false;
 
+		}
+		/**
+		 * clone() override method used to invoke polymorphism when using
+		 * copy constructor 
+		 * 
+		 * @return	new Tram(this)		Call to copy constructor 
+		 * */
+		public Tram clone(){
+			return new Tram(this);	// Create and return a new Tram using the copy constructor
 		}
 			
 

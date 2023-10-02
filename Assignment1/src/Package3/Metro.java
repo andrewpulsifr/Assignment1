@@ -1,5 +1,6 @@
 
 package Package3;
+import Package1.WheeledTransportation;
 import Package2.Train;
 
 /**
@@ -12,7 +13,7 @@ public class Metro extends Train{
 		
 		protected int yrCreated;
 		private long serialNum;
-		static int metroSNctr;
+		static int SNctr;
 		
 		/**
 		 * Default constructor creates a Metro object with default values
@@ -20,8 +21,7 @@ public class Metro extends Train{
 		 */
 		public Metro(){
 			this.yrCreated=1800;
-			this.serialNum= metroSNctr;
-			metroSNctr++;
+			this.serialNum= SNctr++;
 		}
 		/**
 		 * Parameterized constructor creates a Metro object with input values
@@ -37,8 +37,7 @@ public class Metro extends Train{
 		public Metro(int numWheels, double maxSpeed, int numVehicles, String startStation,String destStation, int yrCreated ){
 			super(numWheels,maxSpeed,numVehicles,startStation,destStation);
 			this.yrCreated=yrCreated;
-			this.serialNum= metroSNctr;
-			metroSNctr++;
+			this.serialNum= SNctr++;
 		}
 		/**
 		 * Copy constructor creates a Metro object inputs of another object
@@ -49,8 +48,7 @@ public class Metro extends Train{
 		public Metro(Metro m1 ){
 			super(m1.numWheels,m1.maxSpeed,m1.numVehicles,m1.startStation,m1.destStation);
 			this.yrCreated=m1.yrCreated;
-			this.serialNum= metroSNctr;
-			metroSNctr++;
+			this.serialNum= SNctr++;
 		}
 		
 		/**
@@ -101,7 +99,15 @@ public class Metro extends Train{
 				return false;
 
 		}
-			
+		/**
+		 * clone() override method used to invoke polymorphism when using
+		 * copy constructor 
+		 * 
+		 * @return	new Metro(this)		Call to copy constructor 
+		 * */
+		public Metro clone(){
+			return new Metro(this);	// Create and return a new WheeledTransportation using the copy constructor
+		}
 
 
 }

@@ -12,7 +12,7 @@ public class Monowheel extends WheeledTransportation {
 
 	private double maxWeight;
 	private long serialNum;
-	static long monoSNctr = 55000;
+	static long SNctr = 55000;
 	
 	
 	/**
@@ -21,8 +21,7 @@ public class Monowheel extends WheeledTransportation {
 	 */
 	Monowheel(){
 		maxWeight=0;
-		this.serialNum= monoSNctr;
-		monoSNctr++;
+		this.serialNum= SNctr++;
 	}
 	/**
 	 * Parameterized constructor creates a Monowheel object with input values
@@ -35,8 +34,7 @@ public class Monowheel extends WheeledTransportation {
 	 */
 	Monowheel(int numWheels, double maxSpeed, double maxWegith){
 		super(numWheels, maxSpeed);
-		this.serialNum= monoSNctr;
-		monoSNctr++;
+		this.serialNum= SNctr++;
 	}
 	/**
 	 * Copy constructor creates a wheeled transport object inputs of another object
@@ -47,8 +45,7 @@ public class Monowheel extends WheeledTransportation {
 	Monowheel(Monowheel m1){
 		super(m1.numWheels,m1.maxSpeed);
 		this.maxWeight=m1.maxWeight;
-		this.serialNum= monoSNctr;
-		monoSNctr++;
+		this.serialNum= SNctr++;
 	}
 	
 	/**
@@ -93,5 +90,16 @@ public class Monowheel extends WheeledTransportation {
 		}
 			return false;
 
+	}
+	
+	/**
+	 * clone() override method used to invoke polymorphism when using
+	 * copy constructor 
+	 * 
+	 * @return	new Monowheel(this)		Call to copy constructor 
+	 * */
+	public Monowheel clone()
+	{
+		return new Monowheel(this);	// Create and return a new Monowheel using the copy constructor
 	}
 }

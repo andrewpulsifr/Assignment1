@@ -37,7 +37,7 @@ public class Train extends WheeledTransportation{
 		super(numWheels,maxSpeed);
 		this.destStation= destStation;
 		this.startStation= startStation;
-
+		
 		
 	}
 	/**
@@ -124,6 +124,15 @@ public class Train extends WheeledTransportation{
 		}
 			return false;
 
+	}
+	/**
+	 * clone() override method used to invoke polymorphism when using
+	 * copy constructor 
+	 * 
+	 * @return	new Train(this)		Call to copy constructor 
+	 * */
+	public Train clone(){
+		return new Train(this);	// Create and return a new Train using the copy constructor
 	}
 	
 		
