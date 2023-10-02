@@ -52,7 +52,7 @@ public class WheeledTransportation{
 		 * Assigns serial number using static counter
 		 * Increments counter by one to avoid duplicate serial numbers
 		 * 
-		 * @paramw1	WheeledTransport object containing variables to copy 
+		 * @param w1	WheeledTransport object containing variables to copy 
 		 */
 		public WheeledTransportation(WheeledTransportation w1){
 			this.numWheels = w1.numWheels;

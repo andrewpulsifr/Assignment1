@@ -1,40 +1,80 @@
 package Package2;
 import Package3.Metro;
 
+/**
+ * Class that returns a Tram object 
+ * Object that can be created through a default, parameterized or copy constructor
+ * Object extends metro class adding totatStops & unique serial number
+ * @author Andrew Pulsifer & Eamon 
+ */
 public class Tram extends Metro{
 		
 		protected int totalStops;
 		private long serialNum;
 		static int tramSNctr=25000;
 		
+		/**
+		 * Default constructor creates a Tram object with default values
+		 * Assigns a unique serial number using static counter
+		 */
+
 		Tram(){
 			this.totalStops=0;
 			this.serialNum= tramSNctr;
 			tramSNctr++;
 		}
 		
+		/**
+		 * Parameterized constructor creates a Tram object with input values
+		 * Assigns a unique serial number using static counter
+		 * 
+		 * @param	numWheels	Defines number of wheels 
+		 * @param	maxSpeed	Defines the max speed of the transport vehicle 
+		 * @param	numVehicles Defines number of vehicles
+		 * @param	startStation Defines the station the train departs from 
+		 * @param 	destStation	Defines the station the train arrives at
+		 * @param	yrCreated	Defines the year created
+		 * @param	totalStops	Defines total number of stops
+		 */
 		Tram(int numWheels, double maxSpeed, int numVehicles, String startStation,String destStation, int yrCreated,int totalStops ){
 			super(numWheels,maxSpeed,numVehicles,startStation,destStation,yrCreated);
 			this.totalStops=totalStops;
 			this.serialNum= tramSNctr;
 			tramSNctr++;
 		}
-		
+		/**
+		 * Copy constructor creates a MetTramro object inputs of another object
+		 * Assigns a unique serial number using static counter
+		 * 
+		 * @paramt1	Tram object containing variables to copy 
+		 */	
 		Tram(Tram t1){
 			super(t1.numWheels,t1.maxSpeed,t1.numVehicles,t1.startStation,t1.destStation,t1.yrCreated);
 			this.totalStops=t1.totalStops;
 			this.serialNum= tramSNctr;
 			tramSNctr++;
 		}
-			
+		
+		/**
+		 * Mutator method reseting totalStops
+		 * @param	totalStops	Input reseting total number of stops
+		 */
 		public void setTotalStops(int totalStops) {
 			this.totalStops=totalStops;
 		}
 		
+		/**
+		 * Accessor method returning totalStops 
+		 * @return	totalStops	returns total number of stops 	 
+		*/
 		public int getTotalStops() {
 			return this.totalStops;
 		}
-	
+		/**
+		 * toString override method returning all information related to object
+		 * 
+		 * @return String returns information related to object 
+		 */
 		public String toString() {
 			return "This wheeled transport — serial #"+serialNum+" has "+numWheels+" wheels, has"
 					+ "a maximum speed of "+ maxSpeed+" km/hr. It has "+numVehicles+" vehicles and "
@@ -42,7 +82,13 @@ public class Tram extends Metro{
 					+". It was created in the year "+yrCreated+" and has "+totalStops+" totals stops.";
 						
 		}
-		
+		/**
+		 * equals() override method returning whether objects are equal
+		 * 
+		 * @param	x 		Object input to compare
+		 * @return	false	if not equal
+		 * @return	true	if equal
+		 */
 		public boolean equals(Object x) {
 			
 			if(x == null || x.getClass() != this.getClass()) {
