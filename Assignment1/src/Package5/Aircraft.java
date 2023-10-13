@@ -1,6 +1,7 @@
-package Aircraft;
+package Package5;
+import Package0.Transportation;
 
-public class Aircraft {
+public class Aircraft extends Transportation{
 	protected double price;
 	protected double maxElevation;
 	private long serialNum;
@@ -10,7 +11,7 @@ public class Aircraft {
 	//***CONSTRUCTORS***//
 	
 	//default constructor
-	Aircraft() {
+	public Aircraft() {
 		this.price = 0;
 		this.maxElevation = 0;
 		this.serialNum = SNctr;
@@ -18,14 +19,14 @@ public class Aircraft {
 	}
 	
 	//parameterized constructor
-	Aircraft(double inPrice, double inElevation) {
+	public Aircraft(double inPrice, double inElevation) {
 		this.price = inPrice;
 		this.maxElevation = inElevation;
 		serialNum = SNctr;
 		SNctr++;
 	}
 	//copy constructor
-	Aircraft(Aircraft inObject) {
+	public Aircraft(Aircraft inObject) {
 		this.price = inObject.price;
 		this.maxElevation = inObject.maxElevation;
 		this.serialNum = SNctr;

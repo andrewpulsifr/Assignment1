@@ -1,5 +1,4 @@
 package Package2;
-import Package1.WheeledTransportation;
 import Package3.Metro;
 
 /**

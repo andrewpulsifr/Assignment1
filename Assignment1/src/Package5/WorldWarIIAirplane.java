@@ -1,10 +1,10 @@
-package Aircraft;
+package Package5;
 
 public class WorldWarIIAirplane extends Aircraft{
 	
 	private boolean twinEngine;
-	static long ww2SNctr = 80000;
 	private long serialNum;
+	static long ww2SNctr = 80000;
 	
 	//***CONSTRUCTORS***//
 	
@@ -16,7 +16,7 @@ public class WorldWarIIAirplane extends Aircraft{
 	}
 	
 	//parameterized constructor
-	WorldWarIIAirplane(double inPrice, double inElevation, boolean inEngine){
+	public WorldWarIIAirplane(double inPrice, double inElevation, boolean inEngine){
 		super(inPrice, inElevation);
 		this.twinEngine = inEngine;
 		this.serialNum = ww2SNctr;
