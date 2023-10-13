@@ -32,7 +32,7 @@ public class Monowheel extends WheeledTransportation {
 	 * @param	maxSpeed	Defines the max speed of the transport vehicle 
 	 * @param	maxWeight	Defines the maximum weight a monowheel object can hold
 	 */
-	Monowheel(int numWheels, double maxSpeed, double maxWegith){
+	public Monowheel(int numWheels, double maxSpeed, double maxWeight){
 		super(numWheels, maxSpeed);
 		this.serialNum= SNctr++;
 	}
@@ -70,7 +70,7 @@ public class Monowheel extends WheeledTransportation {
 	 */
 	public String toString() {
 		return "This wheeled transport — serial #"+serialNum+" has "+numWheels+" wheels, has"
-				+ "a maximum speed of"+ maxSpeed +". The max weight of this monowheel equals "+maxWeight;
+				+ " a maximum speed of"+ maxSpeed +". The max weight of this monowheel equals "+maxWeight;
 	}
 	/**
 	 * equals() override method returning whether objects are equal

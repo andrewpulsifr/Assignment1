@@ -102,7 +102,7 @@ public class Train extends WheeledTransportation{
 	 */
 	public String toString() {
 		return "This wheeled transport — serial #"+getSerialNum()+" has "+numWheels+" wheels, has"
-				+ "a maximum speed of"+ maxSpeed+" km/hr. It has "+numVehicles+" vehicles and "
+				+ " a maximum speed of"+ maxSpeed+" km/hr. It has "+numVehicles+" vehicles and "
 						+ "its starting and destination stations are"+startStation+" and "+destStation;
 					
 	}

@@ -36,7 +36,7 @@ public class Tram extends Metro{
 		 * @param	yrCreated	Defines the year created
 		 * @param	totalStops	Defines total number of stops
 		 */
-		Tram(int numWheels, double maxSpeed, int numVehicles, String startStation,String destStation, int yrCreated,int totalStops ){
+		public Tram(int numWheels, double maxSpeed, int numVehicles, String startStation,String destStation, int yrCreated,int totalStops ){
 			super(numWheels,maxSpeed,numVehicles,startStation,destStation,yrCreated);
 			this.totalStops=totalStops;
 			this.serialNum= SNctr++;
@@ -75,7 +75,7 @@ public class Tram extends Metro{
 		 */
 		public String toString() {
 			return "This wheeled transport — serial #"+serialNum+" has "+numWheels+" wheels, has"
-					+ "a maximum speed of "+ maxSpeed+" km/hr. It has "+numVehicles+" vehicles and "
+					+ " a maximum speed of "+ maxSpeed+" km/hr. It has "+numVehicles+" vehicles and "
 					+ "its starting and destination stations are"+startStation+" and "+destStation
 					+". It was created in the year "+yrCreated+" and has "+totalStops+" totals stops.";
 						

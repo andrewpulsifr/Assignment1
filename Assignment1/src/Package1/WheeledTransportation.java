@@ -6,15 +6,15 @@
 
 
 package Package1;
-
+import Package0.Transportation;
 /**
  * Class that returns a wheeled transportation object 
  * Object that can be created through a default, parameterized or copy constructor
  * Object is defined by the number of wheels it has, its max speed and serial number
  * 
- * @author Andrew Pulsifer & Eamon 
+ * @author Andrew Pulsifer & Eamon Foley
  */
-public class WheeledTransportation{
+public class WheeledTransportation extends Transportation{
 	
 		protected int numWheels;
 		protected double maxSpeed;
@@ -101,7 +101,7 @@ public class WheeledTransportation{
 		 */
 		public String toString() {
 			return "This wheeled transport — serial #"+serialNum+" has "+numWheels+" wheels, has"
-					+ "a maximum speed of"+ maxSpeed+" km/hr.";
+					+ " a maximum speed of"+ maxSpeed+" km/hr.";
 		}
 		/**
 		 * equals() override method returning whether objects are equal
