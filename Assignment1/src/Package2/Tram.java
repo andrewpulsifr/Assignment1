@@ -5,7 +5,7 @@ import Package3.Metro;
  * Class that returns a Tram object 
  * Object that can be created through a default, parameterized or copy constructor
  * Object extends metro class adding totatStops & unique serial number
- * @author Andrew Pulsifer & Eamon 
+ * @author Andrew Pulsifer and Eamon 
  */
 public class Tram extends Metro{
 		

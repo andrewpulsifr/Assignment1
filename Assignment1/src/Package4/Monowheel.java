@@ -6,7 +6,7 @@ import Package1.WheeledTransportation;
  * Object that can be created through a default, parameterized or copy constructor
  * Object extends wheeled transportation class adding maximum weight and unique serial number
  * 
- * @author Andrew Pulsifer & Eamon 
+ * @author Andrew Pulsifer and Eamon 
  */
 public class Monowheel extends WheeledTransportation {
 

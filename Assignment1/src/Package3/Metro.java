@@ -1,4 +1,11 @@
 
+// -----------------------------------------------------
+// Assignment 1
+// Part: 1
+// Written by: Andrew Pulsifer 40234525 & Eamon INPUT REST and copy to other classes
+// -----------------------------------------------------
+
+
 package Package3;
 import Package2.Train;
 
@@ -6,7 +13,7 @@ import Package2.Train;
  * Class that returns a Metro object 
  * Object that can be created through a default, parameterized or copy constructor
  * Object extends Train class adding year created & unique serial number
- * @author Andrew Pulsifer & Eamon 
+ * @author Andrew Pulsifer and Eamon 
  */
 public class Metro extends Train{
 		

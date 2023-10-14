@@ -9,8 +9,19 @@ import Package5.WorldWarIIAirplane;
 import Package6.Ferry;
 
 //Part II
+/**
+ * Main class that creates objects by calling classes to test functionatlity
+ *  
+ * 
+ * @author Andrew Pulsifer and Eamon Foley
+ */
 public class Driver2 {
-	
+	/**
+	 * Static method copying array of transport objects 
+	 * 
+	 * @param	inArr	array of transport objects	
+	 * @return	copyTransArr	copied array of objects
+	 */
 	public static Transportation[] copyTheObjects(Transportation[] inArr) {
 		
 		Transportation[] copyTransArr = new Transportation[inArr.length];
@@ -20,7 +31,11 @@ public class Driver2 {
 		}
 		return copyTransArr;
 	}
-	
+	/**
+	 * Static method printing array of transport objects 
+	 * 
+	 * @param	transArr	array of transport objects	
+	 */
 	public static void displayArrContents(Transportation[] transArr) {
 		
 		for(int i=0;i<transArr.length;i++) {
@@ -28,6 +43,12 @@ public class Driver2 {
 		}
 	}
 	
+	/**
+	 * Static main method creating objects and printing output 
+	 * Testing Copy method with new objects
+	 * 
+	 * @param	args	to pass arguments
+	 */
 	public static void main(String[] args) {
 		
 		//CREATING OBJECTS OF EACH CLASS, EACH CLASS WILL HAVE 2 IDENTICAL OBJECTS

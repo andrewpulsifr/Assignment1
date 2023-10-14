@@ -8,9 +8,18 @@ import Package5.Aircraft;
 import Package5.WorldWarIIAirplane;
 import Package6.Ferry;
 
-
+/**
+ * Main class that creates objects by calling classes to test functionatlity
+ * 
+ * @author Andrew Pulsifer and Eamon Foley
+ */
 public class Driver {
 	
+	/**
+	 * Static method printing most and least expensive aircraft
+	 * 
+	 * @param	a	array of aircraft objects
+	 */
 	static void findLeastAndMostExpensiveAircraft(Object[] a) {
 		
 		Aircraft mostExpensive = null;
@@ -55,7 +64,12 @@ public class Driver {
 		
 		
 	}
-
+	/**
+	 * Static main method creating objects and printing output 
+	 * Testing most expensive and least expensive method with new objects
+	 * 
+	 * @param	args	to pass arguments
+	 */
 	public static void main(String[] args) {
 		
 		//CREATING OBJECTS OF EACH CLASS, EACH CLASS WILL HAVE 2 IDENTICAL OBJECTS
@@ -175,18 +189,6 @@ public class Driver {
 		System.out.println("\nFinding the least and most expensive aircraft in Transportation Array 2...\n");
 		findLeastAndMostExpensiveAircraft(tArr2);
 
-
-
-
-
-
-
-
-		
-		
-		
-
-		
 		//Object abc[] = new Object[] {a1,a2,f2,f1};
 		
 		//findLeastAndMostExpensiveAircraft(arc);
