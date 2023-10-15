@@ -2,9 +2,17 @@
 // -----------------------------------------------------
 // Assignment 1
 // Part: 1
-// Written by: Andrew Pulsifer 40234525 & Eamon INPUT REST and copy to other classes
+// Written by: Andrew Pulsifer 40234525 & Eamon 40233231
 // -----------------------------------------------------
 
+/**
+ *	Andrew Pulsifer 40234525 & Eamon 40233231
+ *	COMP249
+ *	Assignment #1
+ *	Due Date October 15th 2023
+ *
+ *	@see Package3
+ */
 
 package Package3;
 import Package2.Train;
@@ -12,8 +20,8 @@ import Package2.Train;
 /**
  * Class that returns a Metro object 
  * Object that can be created through a default, parameterized or copy constructor
- * Object extends Train class adding year created & unique serial number
- * @author Andrew Pulsifer and Eamon 
+ * Object extends Train class adding year created and unique serial number
+ * @author Andrew Pulsifer 40234525 and Eamon Foley 40233231
  */
 public class Metro extends Train{
 		
@@ -49,7 +57,7 @@ public class Metro extends Train{
 		 * Copy constructor creates a Metro object inputs of another object
 		 * Assigns a unique serial number using static counter
 		 * 
-		 * @paramt1	Metro object containing variables to copy 
+		 * @param m1	Metro object containing variables to copy 
 		 */	
 		public Metro(Metro m1 ){
 			super(m1.numWheels,m1.maxSpeed,m1.numVehicles,m1.startStation,m1.destStation);

@@ -1,9 +1,26 @@
+// -----------------------------------------------------
+// Assignment 1
+// Part: 1
+// Written by: Andrew Pulsifer 40234525 & Eamon 40233231
+// -----------------------------------------------------
+
+/**
+ *	Andrew Pulsifer 40234525 & Eamon 40233231
+ *	COMP249
+ *	Assignment #1
+ *	Due Date October 15th 2023
+ *
+ *	@see Package0
+ */
+
 package Package0;
+
 /**
  * Class that returns a Transportation object 
  * Object that can be created through a default or copy constructor
- * Object is defined by the serial number * 
- * @author Andrew Pulsifer and Eamon Foley
+ * Object is defined by the serial number 
+ * 
+ * @author Andrew Pulsifer 40234525 and Eamon Foley 40233231
  */
 public class Transportation {
 	private long serialNo;

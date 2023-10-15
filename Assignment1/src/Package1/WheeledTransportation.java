@@ -1,9 +1,17 @@
 // -----------------------------------------------------
 // Assignment 1
 // Part: 1
-// Written by: Andrew Pulsifer 40234525 & Eamon INPUT REST and copy to other classes
+// Written by: Andrew Pulsifer 40234525 & Eamon 40233231
 // -----------------------------------------------------
 
+/**
+ *	Andrew Pulsifer 40234525 & Eamon 40233231
+ *	COMP249
+ *	Assignment #1
+ *	Due Date October 15th 2023
+ *
+ *	@see Package1
+ */
 
 package Package1;
 import Package0.Transportation;
@@ -12,7 +20,7 @@ import Package0.Transportation;
  * Object that can be created through a default, parameterized or copy constructor
  * Object is defined by the number of wheels it has, its max speed and serial number
  * 
- * @author Andrew Pulsifer & Eamon Foley
+ * @author Andrew Pulsifer 40234525 and Eamon Foley 40233231
  */
 public class WheeledTransportation extends Transportation{
 	

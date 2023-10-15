@@ -1,10 +1,24 @@
+// -----------------------------------------------------
+// Assignment 1
+// Part: 1
+// Written by: Andrew Pulsifer 40234525 & Eamon 40233231
+// -----------------------------------------------------
+
+/**
+ *	Andrew Pulsifer 40234525 & Eamon 40233231
+ *	COMP249
+ *	Assignment #1
+ *	Due Date October 15th 2023
+ *
+ *	@see Package5
+ */
 package Package5;
 
 /**
  * Class that returns a WorldWarIIAirplane object 
  * Object that can be created through a default, parameterized or copy constructor
  * Object extends Aircraft class adding twin engine
- * @author Andrew Pulsifer & Eamon 
+ * @author Andrew Pulsifer and Eamon 
  */
 public class WorldWarIIAirplane extends Aircraft{
 	

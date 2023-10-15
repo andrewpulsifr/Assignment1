@@ -1,3 +1,10 @@
+// -----------------------------------------------------
+// Assignment 1
+// Part: 2
+// Written by: Andrew Pulsifer 40234525 & Eamon 40233231
+// -----------------------------------------------------
+
+
 import Package0.Transportation;
 import Package1.WheeledTransportation;
 import Package2.Train;
@@ -13,7 +20,7 @@ import Package6.Ferry;
  * Main class that creates objects by calling classes to test functionatlity
  *  
  * 
- * @author Andrew Pulsifer and Eamon Foley
+ * @author Andrew Pulsifer 40234525 and Eamon Foley 40233231 
  */
 public class Driver2 {
 	/**
@@ -50,6 +57,10 @@ public class Driver2 {
 	 * @param	args	to pass arguments
 	 */
 	public static void main(String[] args) {
+		
+		System.out.println("Welcome to program testing object creation of transportation classes");
+		System.out.println("-------------------------------------------------------------------");
+		System.out.println();
 		
 		//CREATING OBJECTS OF EACH CLASS, EACH CLASS WILL HAVE 2 IDENTICAL OBJECTS
 				//AND ONE OBJECT WITH DIFFERENT ATTRIBUTES IN ORDER TO TEST THE METHODS
@@ -150,6 +161,10 @@ public class Driver2 {
 				
 				System.out.println("Displaying information of coppied array: \n");
 				displayArrContents(coppiedArr);
+				
+				System.out.println();
+				System.out.println("-------------------------------------------------------------------");
+				System.out.println("Program has terminated!");
 		
 	}
 

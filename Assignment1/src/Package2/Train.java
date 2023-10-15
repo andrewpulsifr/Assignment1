@@ -1,8 +1,17 @@
 // -----------------------------------------------------
 // Assignment 1
 // Part: 1
-// Written by: Andrew Pulsifer 40234525 & Eamon INPUT REST and copy to other classes
+// Written by: Andrew Pulsifer 40234525 & Eamon 40233231
 // -----------------------------------------------------
+
+/**
+ *	Andrew Pulsifer 40234525 & Eamon 40233231
+ *	COMP249
+ *	Assignment #1
+ *	Due Date October 15th 2023
+ *
+ *	@see Package2
+ */
 
 package Package2;
 import Package1.WheeledTransportation;
@@ -10,8 +19,8 @@ import Package1.WheeledTransportation;
 /**
  * Class that returns a Train object 
  * Object that can be created through a default, parameterized or copy constructor
- * Object extends wheeled transport class adding numVehicles, startStation & destStation
- * @author Andrew Pulsifer and Eamon 
+ * Object extends wheeled transport class adding numVehicles, startStation and destStation
+ * @author Andrew Pulsifer 40234525 and Eamon Foley 40233231
  */
 public class Train extends WheeledTransportation{
 	

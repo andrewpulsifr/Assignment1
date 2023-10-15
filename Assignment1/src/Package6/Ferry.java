@@ -1,3 +1,17 @@
+// -----------------------------------------------------
+// Assignment 1
+// Part: 1
+// Written by: Andrew Pulsifer 40234525 & Eamon 40233231
+// -----------------------------------------------------
+
+/**
+ *	Andrew Pulsifer 40234525 & Eamon 40233231
+ *	COMP249
+ *	Assignment #1
+ *	Due Date October 15th 2023
+ *
+ *	@see Package6
+ */
 package Package6;
 import Package0.Transportation;
 
@@ -6,7 +20,7 @@ import Package0.Transportation;
  * Object that can be created through a default, parameterized or copy constructor
  * Object extends Transportation class adding maxSpeed and maxLoad
  * 
- * @author Andrew Pulsifer & Eamon Foley
+ * @author Andrew Pulsifer 40234525 and Eamon Foley 40233231
  */
 public class Ferry extends Transportation{
 	private double maxSpeed;

@@ -1,11 +1,26 @@
+// -----------------------------------------------------
+// Assignment 1
+// Part: 1
+// Written by: Andrew Pulsifer 40234525 & Eamon 40233231
+// -----------------------------------------------------
+
+/**
+ *	Andrew Pulsifer 40234525 & Eamon 40233231
+ *	COMP249
+ *	Assignment #1
+ *	Due Date October 15th 2023
+ *
+ *	@see Package2
+ */
+
 package Package2;
 import Package3.Metro;
 
 /**
  * Class that returns a Tram object 
  * Object that can be created through a default, parameterized or copy constructor
- * Object extends metro class adding totatStops & unique serial number
- * @author Andrew Pulsifer and Eamon 
+ * Object extends metro class adding totatStops and unique serial number
+ * @author Andrew Pulsifer 40234525 and Eamon Foley 40233231
  */
 public class Tram extends Metro{
 		
@@ -44,7 +59,7 @@ public class Tram extends Metro{
 		 * Copy constructor creates a MetTramro object inputs of another object
 		 * Assigns a unique serial number using static counter
 		 * 
-		 * @paramt1	Tram object containing variables to copy 
+		 * @param t1	Tram object containing variables to copy 
 		 */	
 		Tram(Tram t1){
 			super(t1.numWheels,t1.maxSpeed,t1.numVehicles,t1.startStation,t1.destStation,t1.yrCreated);

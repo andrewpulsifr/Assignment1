@@ -1,3 +1,18 @@
+// -----------------------------------------------------
+// Assignment 1
+// Part: 1
+// Written by: Andrew Pulsifer 40234525 & Eamon 40233231
+// -----------------------------------------------------
+
+/**
+ *	Andrew Pulsifer 40234525 & Eamon 40233231
+ *	COMP249
+ *	Assignment #1
+ *	Due Date October 15th 2023
+ *
+ *	@see Package4
+ */
+
 package Package4;
 import Package1.WheeledTransportation;
 
@@ -6,7 +21,7 @@ import Package1.WheeledTransportation;
  * Object that can be created through a default, parameterized or copy constructor
  * Object extends wheeled transportation class adding maximum weight and unique serial number
  * 
- * @author Andrew Pulsifer and Eamon 
+ * @author Andrew Pulsifer 40234525 and Eamon Foley 40233231
  */
 public class Monowheel extends WheeledTransportation {
 
@@ -40,7 +55,7 @@ public class Monowheel extends WheeledTransportation {
 	 * Copy constructor creates a wheeled transport object inputs of another object
 	 * Assigns unique serial number using static counter	
 	 * 
-	 * @param m1	Monowheel object containing variables to copy 
+	 * @param	m1	Monowheel object containing variables to copy 
 	 */
 	Monowheel(Monowheel m1){
 		super(m1.numWheels,m1.maxSpeed);
@@ -50,14 +65,14 @@ public class Monowheel extends WheeledTransportation {
 	
 	/**
 	 * Mutator method reseting maxWeight
-	 * @param	numWheels	Input reseting maximum monowheel weight 
+	 * @param	maxWeight	Input reseting maximum monowheel weight 
 	 */
 	public void setMaxWeight(int maxWeight) {
 		this.maxWeight=maxWeight;
 	}
 	/**
 	 * Accessor method returning max weight
-	 * @return	numWheels	returns number of wheels of object	 
+	 * @return	maxWeight	returns number of wheels of object	 
 	*/
 	public double getMaxWeight() {
 		return maxWeight;

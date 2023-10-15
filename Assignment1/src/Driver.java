@@ -1,3 +1,9 @@
+// -----------------------------------------------------
+// Assignment 1
+// Part: 2
+// Written by: Andrew Pulsifer 40234525 & Eamon 40233231
+// -----------------------------------------------------
+
 import Package0.Transportation;
 import Package1.WheeledTransportation;
 import Package2.Train;
@@ -7,11 +13,10 @@ import Package4.Monowheel;
 import Package5.Aircraft;
 import Package5.WorldWarIIAirplane;
 import Package6.Ferry;
-
 /**
  * Main class that creates objects by calling classes to test functionatlity
  * 
- * @author Andrew Pulsifer and Eamon Foley
+ * @author Andrew Pulsifer 40234525 and Eamon Foley 40233231
  */
 public class Driver {
 	
@@ -76,6 +81,12 @@ public class Driver {
 		//AND ONE OBJECT WITH DIFFERENT ATTRIBUTES IN ORDER TO TEST THE METHODS
 		
 		//CREATING WHEELED TRANSPORTATION OBJECTS
+		
+		System.out.println("Welcome to program testing object creation of transportation classes");
+		System.out.println("-------------------------------------------------------------------");
+		System.out.println();
+
+		
 		WheeledTransportation wt1 = new WheeledTransportation(6,60.0);
 		WheeledTransportation wt2 = new WheeledTransportation(6,60.0);
 		WheeledTransportation wt3 = new WheeledTransportation(4,90.0);
@@ -192,6 +203,9 @@ public class Driver {
 		//Object abc[] = new Object[] {a1,a2,f2,f1};
 		
 		//findLeastAndMostExpensiveAircraft(arc);
+		System.out.println();
+		System.out.println("-------------------------------------------------------------------");
+		System.out.println("Program has terminated!");
 	}
 
 }
