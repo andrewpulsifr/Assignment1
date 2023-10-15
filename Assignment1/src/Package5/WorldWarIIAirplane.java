@@ -117,10 +117,10 @@ public class WorldWarIIAirplane extends Aircraft{
 	
 	/**
 	 * Accessor method returning next serial number of object	
-	 * @return	ww2SNctr+1 returns next serial number 
+	 * @return	ww2SNctr returns next serial number 
 	 */
-	public long getNextSerialNumber() {
-		return ww2SNctr + 1;
+	public static long getNextSerialNumber() {
+		return ww2SNctr;
 	}
 		
 	//***EQUALS() METHOD***//

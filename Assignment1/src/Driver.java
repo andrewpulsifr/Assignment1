@@ -132,30 +132,35 @@ public class Driver {
 		System.out.println("\t" + wt1.toString()+ "\n");
 		System.out.println("\t" +wt2.toString()+ "\n");
 		System.out.println("\t" +wt3.toString()+ "\n");
+		System.out.println("\tNext serial number equals: " +WorldWarIIAirplane.getNextSerialNumber()+ "\n");
 		System.out.println("\n");
 		
 		System.out.println("Train Objects:");
 		System.out.println("\t" +train1.toString()+ "\n");
 		System.out.println("\t" +train2.toString()+ "\n");
 		System.out.println("\t" +train3.toString()+ "\n");
+		System.out.println("\tNext serial number equals: " +Train.getNextSerialNumber()+ "\n");
 		System.out.println("\n");
 
 		System.out.println("Metro Objects:");
 		System.out.println("\t" +metro1.toString()+ "\n");
 		System.out.println("\t" +metro2.toString()+ "\n");
 		System.out.println("\t" +metro3.toString()+ "\n");
+		System.out.println("\tNext serial number equals: " +Metro.getNextSerialNumber()+ "\n");
 		System.out.println("\n");
 
 		System.out.println("Tram Objects:");
 		System.out.println("\t" +tram1.toString()+ "\n");
 		System.out.println("\t" +tram2.toString()+ "\n");
 		System.out.println("\t" +tram3.toString()+ "\n");
+		System.out.println("\tNext serial number equals: " +Tram.getNextSerialNumber()+ "\n");
 		System.out.println("\n");
 
 		System.out.println("Monowheel Objects:");
 		System.out.println("\t" +mono1.toString()+ "\n");
 		System.out.println("\t" +mono2.toString()+ "\n");
 		System.out.println("\t" +mono3.toString()+ "\n");
+		System.out.println("\t Next serial number equals: " +Monowheel.getNextSerialNumber()+ "\n");
 		System.out.println("\n");
 
 		System.out.println("Aircraft Objects:");
@@ -168,12 +173,14 @@ public class Driver {
 		System.out.println("\t" +ww2Airplane1.toString()+ "\n");
 		System.out.println("\t" +ww2Airplane2.toString()+ "\n");
 		System.out.println("\t" +ww2Airplane3.toString()+ "\n");
+		System.out.println("\tNext serial number equals: " +Aircraft.getNextSerialNumber()+ "\n");
 		System.out.println("\n");
 
 		System.out.println("Ferry Objects:");
 		System.out.println("\t" +ferry1.toString()+ "\n");
 		System.out.println("\t" +ferry2.toString()+ "\n");
 		System.out.println("\t" +ferry3.toString()+ "\n");
+		System.out.println("\tNext serial number equals: " +Ferry.getNextSerialNumber()+ "\n");
 		System.out.println("\n");
 
 		//TESTING EQUALS METHODS

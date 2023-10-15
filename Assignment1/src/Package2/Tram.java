@@ -125,7 +125,13 @@ public class Tram extends Metro{
 			return new Tram(this);	// Create and return a new Tram using the copy constructor
 		}
 			
-
-
+		/**
+		 * Accessor method returning next serial number of object	
+		 * @return	serialNumber returns next serial number 
+		 */
+		public static long getNextSerialNumber() {
+			return SNctr;
+		}
+		
 }
 

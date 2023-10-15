@@ -89,7 +89,7 @@ public class Metro extends Train{
 		public String toString() {
 			return "This wheeled transport — serial #"+serialNum+" has "+numWheels+" wheels, has"
 					+ " a maximum speed of "+ maxSpeed+" km/hr. It has "+numVehicles+" vehicles and "
-					+ "its starting and destination stations are"+startStation+" and "+destStation
+					+ "its starting and destination stations are "+startStation+" and "+destStation
 					+". It was created in the year "+yrCreated;
 						
 		}
@@ -123,5 +123,12 @@ public class Metro extends Train{
 			return new Metro(this);	// Create and return a new WheeledTransportation using the copy constructor
 		}
 
+		/**
+		 * Accessor method returning next serial number of object	
+		 * @return	serialNumber returns next serial number 
+		 */
+		public static long getNextSerialNumber() {
+			return SNctr;
+		}
 
 }

@@ -61,5 +61,11 @@ public class Transportation {
 		return "This Transportation object — serial #"+serialNo;
 	}
 	
-
+	/**
+	 * Accessor method returning next serial number of object	
+	 * @return	serialNumber returns next serial number 
+	 */
+	public static long getNextSerialNumber() {
+		return SNctr;
+	}
 }

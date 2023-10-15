@@ -85,7 +85,7 @@ public class Monowheel extends WheeledTransportation {
 	 */
 	public String toString() {
 		return "This wheeled transport — serial #"+serialNum+" has "+numWheels+" wheels, has"
-				+ " a maximum speed of"+ maxSpeed +". The max weight of this monowheel equals "+maxWeight;
+				+ " a maximum speed of "+ maxSpeed +". The max weight of this monowheel equals "+maxWeight;
 	}
 	/**
 	 * equals() override method returning whether objects are equal
@@ -116,5 +116,13 @@ public class Monowheel extends WheeledTransportation {
 	public Monowheel clone()
 	{
 		return new Monowheel(this);	// Create and return a new Monowheel using the copy constructor
+	}
+	
+	/**
+	 * Accessor method returning next serial number of object	
+	 * @return	serialNumber returns next serial number 
+	 */
+	public static long getNextSerialNumber() {
+		return SNctr;
 	}
 }

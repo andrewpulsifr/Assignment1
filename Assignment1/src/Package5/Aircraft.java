@@ -113,10 +113,10 @@ public class Aircraft extends Transportation{
 	
 	/**
 	 * Accessor method returning next serial number of object	
-	 * @return	serialNumber+1 returns next serial number 
+	 * @return	serialNumber returns next serial number 
 	 */
-	public long getNextSerialNumber() {
-		return SNctr + 1;
+	public static long getNextSerialNumber() {
+		return SNctr;
 	}
 	
 	//***EQUALS() METHOD***//
